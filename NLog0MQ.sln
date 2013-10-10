@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NLog0MQ", "NLog0MQ\NLog0MQ.csproj", "{B3B38798-F50C-4F04-AC8F-BD349F12A144}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NLog0MQ.Example", "NLog0MQ.Example\NLog0MQ.Example.csproj", "{95654B95-7BA9-4877-BF23-A4506676DCF6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B3B38798-F50C-4F04-AC8F-BD349F12A144}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B3B38798-F50C-4F04-AC8F-BD349F12A144}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B3B38798-F50C-4F04-AC8F-BD349F12A144}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B3B38798-F50C-4F04-AC8F-BD349F12A144}.Release|Any CPU.Build.0 = Release|Any CPU
+		{95654B95-7BA9-4877-BF23-A4506676DCF6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{95654B95-7BA9-4877-BF23-A4506676DCF6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{95654B95-7BA9-4877-BF23-A4506676DCF6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{95654B95-7BA9-4877-BF23-A4506676DCF6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
