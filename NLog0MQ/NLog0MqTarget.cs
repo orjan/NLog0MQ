@@ -1,5 +1,7 @@
 ﻿using System;
+using System.Text;
 using NLog;
+using NLog.Common;
 using NLog.Targets;
 using ZeroMQ;
 
@@ -30,14 +32,21 @@ namespace NLog0MQ
         
         protected override void InitializeTarget()
         {
+            if (string.IsNullOrEmpty(Host))
+            {
+                throw new ArgumentException("Host must be specified for the target e.g. tcp://*:5563");
+            }
+
+            InternalLogger.Info("Connecting to host: " + Host);
+
             context = ZmqContext.Create();
             publisher = context.CreateSocket(SocketType.PUB);
-            publisher.Bind("tcp://*:5563");
+            publisher.Bind(Host);
         }
 
         protected override void Write(LogEventInfo logEvent)
         {
-            throw new Exception("sadfdsafdsafds");
+            publisher.Send(logEvent.FormattedMessage, Encoding.UTF8);
         }
 
         protected override void CloseTarget()
